@@ -36,7 +36,7 @@ function checkCoursesForDiscount() {
         openedTabs[tab.id] = setTimeout(() => {
           chrome.tabs.remove(tab.id);
           delete openedTabs[tab.id];
-        }, 5000); // 탭은 5초 후에 닫힙니다.
+        }, 2000); // 탭은 2초 후에 닫힙니다.
       });
     });
   });
