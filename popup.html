@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>인프런 강의 할인 알림</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        width: 300px;
+      }
+      input[type="text"] {
+        width: 70%;
+      }
+      ul {
+        padding-left: 0;
+      }
+      li {
+        list-style-type: none;
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>강의 URL 추가</h2>
+    <input type="text" id="courseUrl" placeholder="강의 URL을 입력하세요." />
+    <button id="addUrl">추가</button>
+
+    <h3>등록된 강의 목록</h3>
+    <ul id="courseList"></ul>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
