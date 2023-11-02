@@ -4,7 +4,7 @@
 - [x] 사용자는 여러 주소(강의)를 등록할 수 있다.
 - [x] 추가된 사이트들을 리스트로 만들어 관리한다.
 - [x] 추가된 사이트 중에서 class="cd-price\_\_discount-rate"요소가 존재하는지 확인한다.
-  - [x] 존재한다면 사용자에게 해당 class="cd-header**title”이 class="cd-price**discount-rate" 만큼 할인한다고 알린다. 또한 ~~class="cd-price\_\_reg-price"~~ → class="cd-price\_\_pay-price" 의 형식으로 가격을 표시한다.
+  - [x] 존재한다면 사용자에게 해당 class="cd-header**title”이 class="cd-price**discount-rate" 만큼 할인한다고 알린다. 또한 class="cd-price\_\_reg-price" → class="cd-price\_\_pay-price" 의 형식으로 가격을 표시한다.
   - [x] 존재하지 않는다면 무시한다.
 - [x] 매일 0시 30분에 리스트에 존재하는 사이트들은 일괄적으로 갱신된다.
   - [x] 만약 사용자가 새로 추가한 사이트의 경우 추가 즉시 해당 사이트만 1회 갱신한다.
