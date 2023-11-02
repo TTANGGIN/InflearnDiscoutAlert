@@ -31,8 +31,8 @@ chrome.alarms.onAlarm.addListener(function (alarm) {
 function checkCoursesForDiscount() {
   chrome.storage.local.get("courses", function (data) {
     let courses = data.courses || [];
-    courses.forEach((course) => {
-      chrome.tabs.create({ url: course, active: false }, function (tab) {
+    courses.forEach((courseObj) => {
+      chrome.tabs.create({ url: courseObj.url, active: false }, function (tab) {
         openedTabs[tab.id] = setTimeout(() => {
           chrome.tabs.remove(tab.id);
           delete openedTabs[tab.id];

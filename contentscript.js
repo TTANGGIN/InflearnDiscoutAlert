@@ -9,7 +9,8 @@ chrome.storage.local.get("courses", function (data) {
   }
 
   // 현재 페이지의 URL이 사용자가 추가한 강의 URL 목록에 포함되어 있는지 확인
-  if (!courses.includes(currentURL)) {
+  const storedUrls = courses.map((courseObj) => courseObj.url);
+  if (!storedUrls.includes(currentURL)) {
     return; // 포함되어 있지 않다면 스크립트 종료
   }
 
