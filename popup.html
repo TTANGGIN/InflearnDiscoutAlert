@@ -17,15 +17,30 @@
       li {
         list-style-type: none;
         margin: 5px 0;
+        display: flex; /* Flex 레이아웃 추가 */
+        justify-content: space-between; /* 컨텐츠 사이의 공간을 최대로 */
+        align-items: center; /* 중앙 정렬 */
+      }
+      li button {
+        background: transparent; /* 배경 투명 */
+        color: #333; /* 진한 회색으로 설정 */
+        border: none; /* 테두리 제거 */
+        font-weight: bold; /* 글자 굵게 */
+        cursor: pointer; /* 마우스 커서를 손가락 모양으로 변경 */
+      }
+      li button:hover {
+        color: #555; /* 버튼에 마우스를 올리면 색상이 약간 연해짐 */
       }
     </style>
   </head>
   <body>
-    <h2>강의 URL 추가</h2>
+    <h3>강의 URL 추가</h3>
     <input type="text" id="courseUrl" placeholder="강의 URL을 입력하세요." />
+    <h3>강의명 추가</h3>
+    <input type="text" id="courseAlias" placeholder="강의 별명을 입력하세요." />
     <button id="addUrl">추가</button>
 
-    <h3>등록된 강의 목록</h3>
+    <h4>등록된 강의 목록</h4>
     <ul id="courseList"></ul>
 
     <script src="popup.js"></script>
